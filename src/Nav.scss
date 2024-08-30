@@ -209,10 +209,10 @@
                         }
                     }
 
-                    .mn-logo.open{
-                       a{
-                        color: transparent;
-                       }
+                    .mn-logo.open {
+                        a {
+                            color: transparent;
+                        }
                     }
 
                     .hamb-button {
@@ -259,7 +259,7 @@
                             height: 70px;
                             border-bottom: 1px solid rgb(170, 170, 170);
                             padding: 0px 15px;
-                           
+
 
                             button {
                                 outline: 0;
@@ -273,9 +273,10 @@
                                 display: flex;
                                 align-items: center;
                                 gap: max(.25rem, .5vw);
-                               h1{
-                                font-size: max(20px, 4vw)
-                               }
+
+                                h1 {
+                                    font-size: max(20px, 4vw)
+                                }
                             }
 
                             img {
@@ -308,7 +309,7 @@
                                     position: relative;
                                     width: 100%;
                                     text-decoration: none;
-                                    
+
 
                                     span {
                                         font-size: max(18px, 1.5vw);
@@ -453,15 +454,18 @@
                                 }
                             }
                         }
-                        .sl-bottom{
+
+                        .sl-bottom {
                             align-items: center;
                             display: flex;
                             justify-content: space-between;
-                            p{
+
+                            p {
                                 opacity: .5;
                             }
-                            .b-right{
-                                button{
+
+                            .b-right {
+                                button {
                                     display: none;
                                 }
                             }
@@ -493,3 +497,44 @@
     }
 }
 
+@media(max-width:420px) {
+    .nav{
+        .nav-container{
+            .mobile-nav {
+                .mn-container{
+                    .mn-logo.open {
+                    a {
+                        font-size: .6rem;
+                    }
+                }
+                }
+                .sidebar.open {
+                    max-width: 75%;
+                  
+                }
+
+            }
+
+        }
+    }
+   
+
+}
+@media(max-width:300px) {
+    .nav{
+        .nav-container{
+            .mobile-nav {
+                
+                
+                .sidebar.open {
+                    max-width: 100%;
+                  
+                }
+
+            }
+
+        }
+    }
+   
+
+}
