@@ -80,7 +80,7 @@ const Nav = () => {
                 </div>
                 <div className="mobile-nav">
                     <div className="mn-container">
-                        <div className='mn-logo'>
+                        <div className={`mn-logo ${isOpen ? 'open' : ''}`}>
                             <Link>
                                 <img src={logo1} alt="" />
                                 <h1>MODELKOS</h1>
