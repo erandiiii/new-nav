@@ -49,7 +49,7 @@
             padding: 0 max(.1rem, .2vw);
             position: relative;
             width: 100%;
-            z-index: 2000 !important;
+            // z-index: 2000 !important;
 
             .nav-link {
                 align-items: center;
@@ -60,7 +60,7 @@
 
                 a {
                     align-items: center;
-                    color: #111;
+                    color: #fff;
                     display: flex;
                     font-size: max(18px, .75vw);
                     gap: max(.25rem, .5vw);
@@ -69,7 +69,8 @@
                     padding: max(.25rem, .5vw) max(.1rem, .5vw);
                     text-decoration: none;
                     font-weight: 520;
-                    z-index: 4000 !important;
+                    z-index: 9999 !important;
+                    // z-index: 4000 !important;
                 }
             }
         }
@@ -109,7 +110,7 @@
                         z-index: 2;
                         font-weight: 400;
                         font-size: max(18px, 0.85vw);
-                        color: black;
+                        color: #fff;
 
                     }
                 }
