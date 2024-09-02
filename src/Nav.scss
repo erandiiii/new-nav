@@ -22,6 +22,7 @@
         justify-content: space-between;
         padding: 0 max(1rem, 2vw);
         width: 100%;
+        z-index: 3000 !important;
 
         .nav-logo {
             align-items: center;
@@ -48,13 +49,14 @@
             padding: 0 max(.1rem, .2vw);
             position: relative;
             width: 100%;
-            z-index: 1000;
+            z-index: 2000 !important;
 
             .nav-link {
                 align-items: center;
                 display: flex;
                 height: 100%;
                 position: relative;
+                z-index: 3000 !important;
 
                 a {
                     align-items: center;
@@ -67,6 +69,7 @@
                     padding: max(.25rem, .5vw) max(.1rem, .5vw);
                     text-decoration: none;
                     font-weight: 520;
+                    z-index: 4000 !important;
                 }
             }
         }

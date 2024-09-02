@@ -1,3 +1,4 @@
+import Home from "./components/Home"
 import Nav from "./Nav"
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
   return (
     <>
       <Nav/>
+      <Home/>
     </>
   )
 }

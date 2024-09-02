@@ -1,0 +1,238 @@
+.hp-container {
+    align-items: stretch;
+    background-image: url('../assets/hp.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    padding: 15% 5%;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: max(2rem, 2vw);
+
+    .bg {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        background-color: #000;
+        opacity: .75;
+    }
+
+    .fp-left {
+        display: flex;
+        flex-direction: column;
+        gap: max(1rem, 3vw);
+        justify-content: center;
+        width: 60% !important;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+
+            .big-title {
+                font-family: regularBrownSugar, sans-serif;
+                line-height: 1.4;
+                font-size: max(25px, 3.5vw);
+                position: relative;
+                z-index: 3;
+                color: #fff;
+                font-weight: 900;
+                width: fit-content;
+            }
+
+            .big-title2 {
+                font-family: regularBrownSugar, sans-serif;
+                line-height: 1.4;
+                font-size: max(25px, 3.5vw);
+                position: relative;
+                z-index: 3;
+                color: #fff;
+                font-weight: 900;
+                width: fit-content;
+                margin-left: max(0rem, 10vw);
+            }
+        }
+
+        .fp-input {
+            align-items: stretch;
+            display: flex;
+            gap: max(.25rem, 1vw);
+
+            .input1 {
+                position: relative;
+                z-index: 3;
+                align-items: center;
+                border: 1px solid #fff;
+                display: flex;
+                gap: max(.25rem, 1vw);
+                padding: max(.25rem, .5vw) max(.25rem, 1vw);
+
+                .input-icon {
+                    align-items: center;
+                    color: #fff;
+                    display: flex;
+                    font-size: max(20px, 1vw);
+                    justify-content: center;
+                }
+
+                input {
+                    background-color: transparent;
+                    border: none;
+                    color: #fff;
+                    height: max(2rem, 2vw);
+                    width: 100%;
+                    outline: none;
+                }
+
+                .input-icon2 {
+                    align-items: center;
+                    color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    cursor: pointer;
+                    font-size: max(20px, 1vw);
+                }
+            }
+
+            .input2 {
+                position: relative;
+                z-index: 3;
+                align-items: center;
+                border: 1px solid #fff;
+                display: flex;
+                gap: max(.25rem, 1vw);
+                padding: max(.25rem, .5vw) max(.25rem, 1vw);
+
+                .second-input-icon {
+                    align-items: center;
+                    color: #fff;
+                    display: flex;
+                    font-size: max(20px, 1vw);
+                    justify-content: center;
+                }
+
+                input {
+                    background-color: transparent;
+                    border: none;
+                    color: #fff;
+                    height: max(2rem, 2vw);
+                    width: 100%;
+                    outline: none;
+                }
+
+                .second-input-icon2 {
+                    align-items: center;
+                    color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    cursor: pointer;
+                    font-size: max(20px, 1vw);
+                }
+            }
+
+            button {
+                align-items: center;
+                // background-color: transparent;
+                border: 2px solid white;
+                border-radius: 0;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                overflow: hidden;
+                padding: max(.35rem, .5vw) max(.5rem, 2vw);
+                transition: .3s ease-in-out;
+                position: relative;
+                z-index: 3;
+
+                p {
+                    line-height: 1.7;
+                    font-size: max(13.5px, .9vw);
+                    color: #000 !important;
+                    position: relative;
+                    transition: .2s ease-in-out;
+                    white-space: nowrap;
+                    z-index: 4;
+                }
+            }
+        }
+    }
+
+    .fp-right {
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 35%;
+
+        a {
+            align-items: center;
+            display: flex;
+            height: max(5rem, 10vw);
+            justify-content: center;
+            left: -10%;
+            position: absolute;
+            top: -15%;
+            width: max(5rem, 10vw);
+            z-index: 5;
+
+            .svg-ja {
+                transition: .2s ease-out;
+                height: fit-content;
+                position: absolute;
+                width: fit-content;
+
+            }
+
+            .arrow-icon {
+                transition: .2s ease-out;
+                color: #fff;
+                font-size: max(20px, 2vw);
+            }
+
+            .svg-ja:hover {
+                transform: rotate(60deg);
+
+                .arrow-icon {
+                    transform: scale(1.2);
+
+                }
+            }
+        }
+
+
+        .fp-img {
+            height: max(10rem, 20vw);
+            transition: .2s ease-in;
+            width: max(7.5rem, 15vw);
+            background-position: top;
+            background-image: url('../assets/fp-girl.png');
+            position: relative;
+            z-index: 1;
+        }
+
+        .fp-img2 {
+            height: max(10rem, 20vw);
+            transition: .2s ease-in;
+            width: max(7.5rem, 15vw);
+            background-position: top;
+            background-image: url('../assets/fp-girl2.png');
+            left: -5rem;
+            position: relative;
+            transform: rotate(30deg);
+            top: 5rem;
+            z-index: 2;
+        }
+
+        .fp-img2:hover {
+            transform: rotate(0);
+            transform: scale(1.15);
+        }
+    }
+}
