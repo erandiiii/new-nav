@@ -84,7 +84,6 @@
                 position: relative;
                 z-index: 3;
                 width: 31%;
-
                 align-items: center;
                 border: 1px solid grey;
                 display: flex;
@@ -132,7 +131,6 @@
                 align-items: center;
                 border: 1px solid grey;
                 display: flex;
-
                 gap: max(0.25rem, 1.5vw);
                 padding: max(0.25rem, 0.5vw) max(0.25rem, 1vw);
 
@@ -178,10 +176,11 @@
                 border-radius: 0;
                 cursor: pointer;
                 display: flex;
+                width: 17%;
                 justify-content: center;
                 overflow: hidden;
                 transition: .3s ease-in-out;
-                padding: .5rem 1rem;
+                padding: max(0.25rem, 0.5vw) max(0.25rem, 1vw);
                 position: relative;
                 z-index: 3;
 
@@ -318,6 +317,15 @@
 
         .fp-left {
             align-items: center;
+            .fp-input{
+                width: 100%;
+                .input1{
+                    width: 40%;
+                }
+                .input2{
+                    width: 40%;
+                }
+            }
 
         }
 
@@ -351,10 +359,13 @@
                 flex-direction: column;
                 width: 100% !important;
                 height:9rem;
+                justify-content: center;
+                align-items: center;
                
 
                 .input1 {
                     width: 100%;
+                  
                 }
 
                 .input2 {
@@ -362,7 +373,7 @@
                 }
 
                 button {
-                    width: 102.5% !important;
+                    width: 102.5%;
                 }
 
 
