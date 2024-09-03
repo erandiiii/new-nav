@@ -4,4 +4,142 @@
     justify-content: space-between;
     padding: 5%;
     width: 100%;
+    
+    .au-text{
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        gap: max(.25rem,1.5vh);
+        justify-content: flex-start;
+        padding: 10rem 0;
+        width: 40%;
+
+        h1{
+            font-family: 'Brown Sugar', sans-serif;
+            line-height: 1.4;
+            font-weight: 500;
+            font-size: max(25px,4vw);
+        }
+        p{
+            font-size: max(14px,1vw);
+            line-height: max(30px,2.5vw);
+        }
+    }
+
+    .au-right{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 60%;
+
+        .img-holder{
+            align-items: stretch;
+            display: flex;
+            gap: max(.5rem,1vw);
+            padding: max(2rem,3vw);
+            position: relative;
+            width: 100%;
+
+            .au-card1{
+                background-color: white;
+                border: 1px solid #000;
+                display: flex;
+                flex-direction: column;
+                gap: max(1rem,1vw);
+                padding: max(.5rem,1vw);
+                position: relative;
+                transition: .2s ease-out;
+                width: max(10rem,25vw);
+                left: 10%;
+                top: -5%;
+                z-index: 3; 
+
+                &:hover{
+                    z-index: 10;
+                    transform: scale(1.1);
+                }
+                .card1-img{
+                    background-position: 50% 50%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-image: url('../../assets/au-card1.png');
+                    height: max(10rem,20vw);
+                }
+
+                .card1-content{
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    gap: max(.5rem,1vw);
+                    width: 100%;
+
+                    h3{
+                        font-family: 'Brown Sugar', sans-serif;
+                        line-height: 1.4;
+                        font-weight: 500;
+                        font-size: max(16px,1vw);
+                    }
+                    .content-row{
+                        align-items: center;
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: max(10px,.25vw);
+                        justify-content: space-evenly;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .au-card2{
+                border: 1px solid #000;
+                display: flex;
+                flex-direction: column;
+                gap: max(1rem,1vw);
+                padding: max(.5rem,1vw);
+                position: relative;
+                transition: .2s ease-out;
+                width: max(10rem,25vw);
+                background-color: white;
+                left: -10%;
+                top: 5%;
+                z-index: 2;
+
+                &:hover{
+                    z-index: 10;
+                    transform: scale(1.1);
+                }
+
+                .card2-img{
+                    background-position: 50% 50%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-image: url('../../assets/au-card2.png');
+                    height: max(10rem,20vw);
+                }
+                .card2-content{
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    gap: max(.5rem,1vw);
+                    width: 100%;
+
+                    h3{
+                        font-family: 'Brown Sugar', sans-serif;
+                        line-height: 1.4;
+                        font-weight: 500;
+                        font-size: max(16px,1vw);
+                    }
+                    .content2-row{
+                        align-items: center;
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: max(10px,.25vw);
+                        justify-content: space-evenly;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
 }
