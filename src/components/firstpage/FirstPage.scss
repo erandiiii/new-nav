@@ -1,6 +1,6 @@
 .hp-container {
     align-items: stretch;
-    background-image: url('../assets/hp.png');
+    background-image: url('../../assets/hp.png');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,15 +28,16 @@
         opacity: .3;
         position: absolute;
         top: 10%;
+        height: 33rem;
         width: max(5rem, 60vw);
         z-index: 2;
-       
+
     }
 
     .fp-left {
         display: flex;
         flex-direction: column;
-        gap: max(1rem,3vw);
+        gap: max(1rem, 3vw);
         justify-content: center;
         width: 60%;
 
@@ -49,7 +50,7 @@
             .big-title {
                 font-family: 'Brown Sugar', sans-serif;
                 line-height: 1.4;
-                font-size: max(25px,3.5vw);
+                font-size: max(25px, 3.5vw);
                 position: relative;
                 z-index: 3;
                 color: #fff;
@@ -61,14 +62,14 @@
             .big-title2 {
                 font-family: 'Brown Sugar', sans-serif;
                 line-height: 1.4;
-                font-size: max(25px,3.5vw);
+                font-size: max(25px, 3.5vw);
                 position: relative;
                 z-index: 3;
                 color: #fff;
                 font-weight: 900;
                 width: fit-content;
                 margin: 0;
-                margin-left: max(0rem,10vw);
+                margin-left: max(0rem, 10vw);
             }
         }
 
@@ -78,13 +79,14 @@
             gap: max(.25rem, 1vw);
 
             .input1 {
+                list-style: none;
                 position: relative;
                 z-index: 3;
                 align-items: center;
                 border: 1px solid #fff;
                 display: flex;
-                gap: max(.25rem, 1vw);
-                padding: max(.25rem, .5vw) max(.25rem, 1vw);
+                gap: max(0.25rem, 1vw);
+                padding: max(0.25rem, 0.5vw) max(0.25rem, 1vw);
 
                 .input-icon {
                     align-items: center;
@@ -101,6 +103,12 @@
                     height: max(2rem, 2vw);
                     width: 100%;
                     outline: none;
+
+                    &::placeholder {
+                        color: #fff;
+                        opacity: 1;
+                        font-size: 15px;
+                    }
                 }
 
                 .input-icon2 {
@@ -109,18 +117,19 @@
                     display: flex;
                     justify-content: center;
                     cursor: pointer;
-                    font-size: max(20px, 1vw);
+                    font-size: max(20px, 1.6vw);
                 }
             }
 
             .input2 {
+                list-style: none;
                 position: relative;
                 z-index: 3;
                 align-items: center;
                 border: 1px solid #fff;
                 display: flex;
-                gap: max(.25rem, 1vw);
-                padding: max(.25rem, .5vw) max(.25rem, 1vw);
+                gap: max(0.25rem, 1vw);
+                padding: max(0.25rem, 0.5vw) max(0.25rem, 1vw);
 
                 .second-input-icon {
                     align-items: center;
@@ -137,6 +146,14 @@
                     height: max(2rem, 2vw);
                     width: 100%;
                     outline: none;
+                    
+
+                    &::placeholder {
+                        color: #fff;
+                        opacity: 1;
+                        font-size: 15px;
+                        
+                    }
                 }
 
                 .second-input-icon2 {
@@ -145,7 +162,7 @@
                     display: flex;
                     justify-content: center;
                     cursor: pointer;
-                    font-size: max(20px, 1vw);
+                    font-size: max(20px, 1.6vw);
                 }
             }
 
@@ -158,8 +175,8 @@
                 display: flex;
                 justify-content: center;
                 overflow: hidden;
-                width: 15%;
-                // padding: max(.35rem,.5vw) max(.5rem,2vw);
+                width: 16%;
+                // padding: max(.35rem,.1vw) max(.2rem,1.5vw);
                 transition: .2s ease-in-out;
                 position: relative;
                 z-index: 3;
@@ -200,23 +217,24 @@
                 height: fit-content;
                 position: absolute;
                 width: fit-content;
+                height: 33rem;
 
+                &:hover {
+                    transform: rotate(60deg);
+                }
             }
 
             .arrow-icon {
                 transition: .2s ease-out;
                 color: #fff;
-                font-size: max(20px, 2vw);
-            }
+                font-size: max(20px, 3vw);
 
-            .svg-ja:hover {
-                transform: rotate(60deg);
-
-                .arrow-icon {
-                    transform: scale(1.2);
-
+                &:hover {
+                    transform: scale(1.2) !important;
                 }
             }
+
+
         }
 
 
@@ -225,7 +243,7 @@
             transition: .2s ease-in;
             width: max(7.5rem, 15vw);
             background-position: top;
-            background-image: url('../assets/fp-girl.png');
+            background-image: url('../../assets/fp-girl.png');
             position: relative;
             z-index: 1;
         }
@@ -235,7 +253,7 @@
             transition: .2s ease-in;
             width: max(7.5rem, 15vw);
             background-position: top;
-            background-image: url('../assets/fp-girl2.png');
+            background-image: url('../../assets/fp-girl2.png');
             left: -5rem;
             position: relative;
             transform: rotate(30deg);
@@ -284,9 +302,9 @@
 @media(max-width:850px) {
     .hp-container {
 
-        .fp-left{
+        .fp-left {
             align-items: center;
-           
+
         }
 
         .fp-right {
@@ -306,17 +324,19 @@
 @media(max-width:600px) {
     .hp-container {
         padding: 25% 5% 5%;
+
         .fp-left {
             width: 100% !important;
 
             .fp-input {
                 flex-direction: column;
                 width: 100%;
-                button{
+
+                button {
                     width: 100%;
                 }
 
-                
+
             }
         }
     }

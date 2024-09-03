@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './FirstPage.scss'
 import { FaArrowRightLong } from 'react-icons/fa6'
 import { IoIosArrowRoundForward, IoMdArrowDropdown } from 'react-icons/io'
-import logo from '../assets/logo-M.png'
+import logo from '../../assets/logo-M.png'
 import { RiMapPinLine } from 'react-icons/ri'
 
 
