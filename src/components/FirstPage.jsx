@@ -18,8 +18,8 @@ const FirstPage = () => {
 
             <div className='fp-left'>
                 <div className='text'>
-                    <h1 className='big-title'>HIRE A MODEL OR</h1>
-                    <h1 className='big-title2'>BECOME ONE</h1>
+                    <h1 className='big-title'>Hire a model or</h1>
+                    <h1 className='big-title2'>Become one</h1>
                 </div>
                 <div className="fp-input">
                     <div className="input1">

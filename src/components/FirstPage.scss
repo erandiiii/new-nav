@@ -36,9 +36,9 @@
     .fp-left {
         display: flex;
         flex-direction: column;
-        gap: max(1rem, 3vw);
+        gap: max(1rem,3vw);
         justify-content: center;
-        width: 60% !important;
+        width: 60%;
 
         .text {
             display: flex;
@@ -49,24 +49,26 @@
             .big-title {
                 font-family: 'Brown Sugar', sans-serif;
                 line-height: 1.4;
-                font-size: max(25px, 3.5vw);
+                font-size: max(25px,3.5vw);
                 position: relative;
                 z-index: 3;
                 color: #fff;
                 font-weight: 900;
                 width: fit-content;
+                margin: 0;
             }
 
             .big-title2 {
                 font-family: 'Brown Sugar', sans-serif;
                 line-height: 1.4;
-                font-size: max(25px, 3.5vw);
+                font-size: max(25px,3.5vw);
                 position: relative;
                 z-index: 3;
                 color: #fff;
                 font-weight: 900;
                 width: fit-content;
-                margin-left: max(0rem, 10vw);
+                margin: 0;
+                margin-left: max(0rem,10vw);
             }
         }
 
@@ -150,14 +152,15 @@
             button {
                 align-items: center;
                 // background-color: transparent;
-                border: 2px solid white;
+                border: 2px solid #fff;
                 border-radius: 0;
                 cursor: pointer;
                 display: flex;
                 justify-content: center;
                 overflow: hidden;
-                // padding: max(.35rem, .5vw) max(.5rem, 1.5vw);
-                transition: .3s ease-in-out;
+                width: 15%;
+                // padding: max(.35rem,.5vw) max(.5rem,2vw);
+                transition: .2s ease-in-out;
                 position: relative;
                 z-index: 3;
 
@@ -309,6 +312,9 @@
             .fp-input {
                 flex-direction: column;
                 width: 100%;
+                button{
+                    width: 100%;
+                }
 
                 
             }

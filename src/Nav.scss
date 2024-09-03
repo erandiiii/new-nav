@@ -30,10 +30,8 @@
             gap: max(.25rem, .5vw);
             text-decoration: none;
             color: white;
-
-            a {
-                gap: .5rem;
-            }
+            font-family: 'Brown Sugar', sans-serif;
+            gap: 1rem;
 
             img {
                 height: 2.5rem;
@@ -198,24 +196,27 @@
                         display: flex;
                         gap: max(.25rem, .5vw);
                         text-decoration: none;
-                        color: black;
 
                         img {
                             height: 2.5rem;
                         }
 
                         a {
+
                             text-decoration: none;
                             align-items: center;
                             display: flex;
                             gap: .3rem;
-                            color: black;
+                            color: #fff;
+                            font-family: 'Brown Sugar', sans-serif;
                         }
                     }
 
                     .mn-logo.open {
                         a {
                             color: transparent;
+                            
+
                         }
                     }
 
@@ -230,8 +231,7 @@
                         justify-content: center;
                         color: #fff !important;
                         z-index: 9998 !important;
-                        outline: none;
-                        text-decoration: none;
+
                     }
                 }
 
@@ -504,43 +504,45 @@
 }
 
 @media(max-width:420px) {
-    .nav{
-        .nav-container{
+    .nav {
+        .nav-container {
             .mobile-nav {
-                .mn-container{
+                .mn-container {
                     .mn-logo.open {
-                    a {
-                        font-size: .6rem;
+                        a {
+                            font-size: .6rem;
+                        }
                     }
                 }
-                }
+
                 .sidebar.open {
                     max-width: 75%;
-                  
+
                 }
 
             }
 
         }
     }
-   
+
 
 }
+
 @media(max-width:300px) {
-    .nav{
-        .nav-container{
+    .nav {
+        .nav-container {
             .mobile-nav {
-                
-                
+
+
                 .sidebar.open {
                     max-width: 100%;
-                  
+
                 }
 
             }
 
         }
     }
-   
+
 
 }
