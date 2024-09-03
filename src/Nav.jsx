@@ -13,14 +13,7 @@ const Nav = () => {
     const [isDdOpen, setIsDdOpen] = useState(false);
     const [isDdOpen1, setIsDdOpen1] = useState(false);
 
-    const ulStyle = {
-        height: isOpen ? '375px' : '0',  // Toggle between 0 and 375px
-        overflow: 'hidden',               // Hide the content when height is 0
-        transition: 'height 0.3s ease',   // Smooth transition for height change
-        listStyle: 'none',                // Remove default list styling
-        padding: 0,                       // Reset padding
-        margin: 0,
-    };
+   
 
     const toggleDropdown = () => {
         setIsOpen1(!isOpen1);
