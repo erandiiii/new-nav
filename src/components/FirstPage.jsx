@@ -18,12 +18,12 @@ const FirstPage = () => {
                 <div className="fp-input">
                     <div className="input1">
                         <div className="input-icon"></div>
-                        <input type="text" />
+                        <input type="text"  placeholder='Female Models'/>
                         <div className="input-icon2"></div>
                     </div>
                     <div className="input2">
                         <div className="second-input-icon"></div>
-                        <input type="text" />
+                        <input type="text" placeholder='Find Location'/>
                         <div className="second-input-icon2"></div>
                     </div>
                     <button>
