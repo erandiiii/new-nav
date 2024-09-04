@@ -48,7 +48,7 @@ const Megamenu = () => {
                                     <p className='category-item'>{model.category[1]}</p>
                                     <p className='category-item'>{model.category[2]}</p>
                                 </div>
-                                <p>{model.date}</p>
+                                <p className='date'>{model.date}</p>
                             </div>
                         </div>
                     ))}

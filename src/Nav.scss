@@ -136,61 +136,61 @@
                         width: 30%;
                         padding: 1% 4%;
                         // border: 1px solid #111;
-                       
-                            font-family: 'Brown Sugar', sans-serif;
-                        
+
+                        font-family: 'Brown Sugar', sans-serif;
+
                     }
 
-                        .cardss {
-                           border:1px solid #111;
-                            width: 90% !important;
-                            padding: 1% 0;
-                            height:19.5rem;
-                           
-                            
+                    .cardss {
+                        border: 1px solid #111;
+                        width: 90% !important;
+                        padding: 1% 0;
+                        height: 19.5rem;
+
+
+                    }
+
+                    .card-image {
+                        display: flex;
+
+                        justify-content: center;
+                    }
+
+                    img {
+                        height: 12.5rem;
+                        width: 95%;
+                    }
+
+                    .card-details {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+
+                        h3 {
+                            font-size: 1rem;
+                            margin-bottom: 1%;
+                            font-family: 'Brown Sugar', sans-serif;
                         }
-                        .card-image{
-                            display: flex;
-                            
-                            justify-content: center;
+
+                    }
+
+                    .real-p {
+
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: -1%;
+                        gap: .8rem;
+                        font-family: sans-serif;
+
+                        p {
+                            font-size: .9rem;
                         }
+                    }
 
-                        img {
-                            height: 12.5rem;
-                            width: 95%;
-                        }
-
-                        .card-details {
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            
-
-                            h3{
-                                font-size: 1rem;
-                                margin:3%;
-                                font-family: 'Brown Sugar', sans-serif;
-                            }
-                            p{
-                                margin-bottom: 2%;
-                            }
-                            
-                           
-                        }
-                        .real-p{
-                               
-                            display: flex;
-                            justify-content: space-between;
-                            gap: .8rem;   
-                            font-family: sans-serif;
-                         }
-                       
-
-
-                    
-
-
-
+                    .date {
+                        margin-top: -.5%;
+                    }
                 }
             }
         }
