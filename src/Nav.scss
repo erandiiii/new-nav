@@ -12,6 +12,7 @@
     justify-content: center;
     font-family: regularMont, sans-serif;
     background-color: transparent;
+    border: 1px solid white;
 
 
     .nav-container {
@@ -69,6 +70,127 @@
                     font-weight: 520;
                     z-index: 9999 !important;
                     // z-index: 4000 !important;
+                }
+
+                .mengamenu-container {
+                    background: #fff;
+                    border: 1px solid #111 !important;
+                    display: flex;
+                    position: absolute;
+                    width: 100vw;
+                    left: -1250%;
+                    top: 100.5%;
+                    height: 30rem;
+                    transition: .25s linear;
+
+                    .mm-left {
+
+                        display: flex;
+                        padding: 2% 2%;
+                        justify-content: space-between;
+                        width: 65%;
+                        // transition: .25s linear;
+
+
+
+                        .menu-category {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: start;
+                            width: 100%;
+
+
+
+                            h3 {
+
+                                color: #111;
+                                margin-left: max(.5rem, .5vw);
+                                margin-bottom: .1rem;
+                                font-family: 'Brown Sugar', sans-serif;
+                                font-weight: 600;
+                                font-size: 1.3rem;
+
+                            }
+
+                            ul {
+                                display: flex;
+                                flex-direction: column;
+                                list-style-type: none;
+                                align-items: start;
+                                justify-content: start;
+                                padding: 0;
+
+                                li {
+
+                                    a {
+                                        font-size: 1.2rem;
+                                        color: #111;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+
+                    .mm-right {
+                        width: 30%;
+                        padding: 1% 4%;
+                        // border: 1px solid #111;
+                       
+                            font-family: 'Brown Sugar', sans-serif;
+                        
+                    }
+
+                        .cardss {
+                           border:1px solid #111;
+                            width: 90% !important;
+                            padding: 1% 0;
+                            height:19.5rem;
+                           
+                            
+                        }
+                        .card-image{
+                            display: flex;
+                            
+                            justify-content: center;
+                        }
+
+                        img {
+                            height: 12.5rem;
+                            width: 95%;
+                        }
+
+                        .card-details {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            
+
+                            h3{
+                                font-size: 1rem;
+                                margin:3%;
+                                font-family: 'Brown Sugar', sans-serif;
+                            }
+                            p{
+                                margin-bottom: 2%;
+                            }
+                            
+                           
+                        }
+                        .real-p{
+                               
+                            display: flex;
+                            justify-content: space-between;
+                            gap: .8rem;   
+                            font-family: sans-serif;
+                         }
+                       
+
+
+                    
+
+
+
                 }
             }
         }
@@ -215,7 +337,7 @@
                     .mn-logo.open {
                         a {
                             color: transparent;
-                            
+
 
                         }
                     }

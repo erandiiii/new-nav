@@ -5,6 +5,7 @@ import './Nav.scss'
 import logo1 from './assets/mk-logo.svg'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { IoIosArrowDown, IoMdClose } from 'react-icons/io'
+import Megamenu from './components/Megamenu'
 
 const Nav = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -51,6 +52,7 @@ const Nav = () => {
                     </div>
                     <div className="nav-link">
                         <Link>Models</Link>
+                        <Megamenu/>
                     </div>
                     <div className="nav-link">
                         <Link>Academy</Link>
