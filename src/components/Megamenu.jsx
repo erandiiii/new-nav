@@ -3,6 +3,7 @@ import { navData, models } from './Data'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { Link } from 'react-router-dom';
 
 
 const Megamenu = () => {
@@ -13,6 +14,9 @@ const Megamenu = () => {
         speed: 500,
         slidesToShow: 2,
         slidesToScroll: 1,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
+
 
     };
     return (
@@ -34,7 +38,10 @@ const Megamenu = () => {
                 ))}
             </div>
             <div className="mm-right">
-                <h3> Models </h3>
+                <div className='top-right'>
+                    <h3> Models </h3>
+                    <Link>View all&gt;</Link>
+                </div>
                 <Slider className='divi' {...settings}>
                     {models.map((model) => (
                         <div key={model.id} className="cardss">
@@ -57,8 +64,28 @@ const Megamenu = () => {
             </div>
         </div>
     )
+    
 };
-
-
+const SampleNextArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "black" }}
+        onClick={onClick}
+      />
+    );
+  };
+  
+  const SamplePrevArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "black",  }}
+        onClick={onClick}
+      />
+    );
+  };
 
 export default Megamenu

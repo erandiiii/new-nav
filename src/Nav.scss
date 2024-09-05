@@ -12,7 +12,7 @@
     justify-content: center;
     font-family: regularMont, sans-serif;
     background-color: transparent;
-    border: 1px solid white;
+    // border: 1px solid white;
 
 
     .nav-container {
@@ -56,6 +56,16 @@
                 height: 100%;
                 position: relative;
                 z-index: 3000 !important;
+                &:hover{
+
+                    .mm-dropdown{
+                        transform: rotate(90deg);
+                    }
+                    .mengamenu-container{
+                        display: flex;
+
+                    }
+                }
 
                 a {
                     align-items: center;
@@ -72,15 +82,22 @@
                     // z-index: 4000 !important;
                 }
 
+                .mm-dropdown{
+                    color: white;
+                    transition: .3s ease-out;
+                    
+                }
+
                 .mengamenu-container {
                     background: #fff;
                     border: 1px solid #111 !important;
                     display: flex;
-                    position: absolute;
+                    position: fixed;
                     width: 100vw;
-                    left: -1250%;
-                    top: 100.5%;
+                    top: 8.8%;
+                    left: 0%;
                     height: 30rem;
+                    display: none;
                     transition: .25s linear;
 
                     .mm-left {
@@ -89,7 +106,8 @@
                         padding: 2% 2%;
                         justify-content: space-between;
                         width: 65%;
-                        // transition: .25s linear;
+                        transition: .25s linear;
+                        
 
 
 
@@ -136,16 +154,100 @@
                         width: 30%;
                         padding: 1% 4%;
                         // border: 1px solid #111;
-
                         font-family: 'Brown Sugar', sans-serif;
+                        .top-right{
+                            display: flex;
+                            align-items: center;
+                            justify-content: start;
+                            a{
+                                color: #111;
+                                font-size: 12px;
+                                font-family: sans-serif;
+                                align-self: center;
+                            }
+                        }
 
+                        .divi {
+                            .slick-dots {
+                                bottom: -3rem;
+                                width: 95%;
+                                li {
+                                    width: 30px;
+                                    button {
+                                        width: 16px;
+                                        height: 16px;
+                                        border-radius: 50%;
+                                        background-color: gray;
+                                        
+                                        
+                                        
+                                        
+                                    }
+
+                                    &.slick-active button {
+                                        background-color: black;
+                                      
+                                    }
+
+                                    &::before {
+                                        content: '';
+                                        position: absolute;
+                                        display: none;
+                                        top: 0;
+                                        left: 0;
+                                        width: 16px;
+                                        height: 16px;
+                                        border-radius: 50%;
+                                        transition: background-color 0.3s ease;
+                                        
+
+                                    }
+                                }
+                            }
+
+                            .slick-dots li button:before {
+                                color: transparent;
+                            }
+                            .slick-prev{
+                                top:-8%;
+                                left: 87%;
+                                color: white;
+                                background-color: white !important;
+                               
+                            }
+
+                            .slick-prev::before{
+                                font-size:20px;
+                                color: black !important;
+                                background-color: white;
+                            }
+                            .slick-next{
+                                top:-8%;
+                                left: 92%;
+                                color: white;
+                                background-color: white !important;
+                            }
+                            .slick-next::before{
+                                font-size:20px;
+                                color: black !important;
+                                background-color: white;
+                            }
+                        }
                     }
 
+
                     .cardss {
-                        border: 1px solid #111;
+                        justify-content: center;
+                        border: 1px solid lightgray;
                         width: 90% !important;
                         padding: 1% 0;
                         height: 19.5rem;
+
+                        &:hover {
+                            background-color: #111;
+                            // transform: scale(1.1);
+                            color: #fff;
+                        }
 
 
                     }
@@ -667,4 +769,35 @@
     }
 
 
+}
+
+@media(max-width:1450px){
+    .mengamenu-container{
+       
+        
+            .mm-right{
+                width: 35% !important;
+                padding: 0;
+            }
+            .divi{
+                .slick-prev{
+                    left: 87% !important;
+                }
+            }
+        
+    }
+}
+@media(max-width:1150px){
+    .mengamenu-container{
+       
+        
+            .mm-right{
+                width: 40% !important;
+                padding: 0;
+            
+           
+        }
+           
+        
+    }
 }

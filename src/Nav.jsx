@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import './Nav.scss'
 import logo1 from './assets/mk-logo.svg'
 import { RxHamburgerMenu } from 'react-icons/rx'
-import { IoIosArrowDown, IoMdClose } from 'react-icons/io'
+import { IoIosArrowDown, IoMdArrowDropdown, IoMdArrowDropright, IoMdClose } from 'react-icons/io'
 import Megamenu from './components/Megamenu'
 
 const Nav = () => {
@@ -52,6 +52,7 @@ const Nav = () => {
                     </div>
                     <div className="nav-link">
                         <Link>Models</Link>
+                        <IoMdArrowDropright  className='mm-dropdown'/>
                         <Megamenu/>
                     </div>
                     <div className="nav-link">
