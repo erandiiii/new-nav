@@ -6,7 +6,7 @@ import logo1 from './assets/mk-logo.svg'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { IoIosArrowDown, IoMdArrowDropdown, IoMdArrowDropright, IoMdClose } from 'react-icons/io'
 import Megamenu from './components/Megamenu'
-import AboutUsMega from './components/AboutUsMega'
+// import AboutUsMega from './components/AboutUsMega'
 
 const Nav = () => {
     const [isOpen, setIsOpen] = useState(false);
