@@ -67,6 +67,10 @@
                         display: flex;
 
                     }
+
+                    .au-mm-container{
+                        display: flex;
+                    }
                 }
 
                 a {
@@ -86,9 +90,111 @@
 
                 .au-mm-container {
                     display: flex;
+                    border: 1px solid lightgray;
+                    flex-wrap: wrap;
+                    justify-content: center;
                     position: fixed;
                     background-color: #fff;
-                    width: 50vw;
+                    top: 8.8%;
+                    left: 25%;
+                    width: 50%;
+                    height: 30rem;
+                    display: none;
+                    margin: 0;
+                    transition: .2s ease-in;
+                    padding: 1.5% 0%;
+
+                    .am-left {
+                        
+                        display: flex;
+                        justify-content: space-between;
+                        width: 55%;
+
+                        h3 {
+                            margin-bottom: -.1rem;
+                        }
+
+                        .am-category {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: start;
+                            width: 50%;
+
+                            h3 {
+                                margin-left: 3rem;
+                            }
+
+                            ul {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: start;
+                                list-style: none;
+
+
+
+                                li {
+                                    a {
+
+                                        color: black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .am-right {
+                        width: 40%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        align-items: center;
+
+                        .top {
+                            display: flex;
+                            justify-content: space-between;
+                            flex-direction: row;
+                            // padding: 1% 0;
+                            height: 50%;
+                            position: relative;
+                            width: 100%;
+
+                            .am-img1 {
+                                background-image: url('./assets/fp-girl.png');
+                                width: 49%;
+                                height: 100%;
+                                background-position: bottom;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                            }
+
+                            .am-img2 {
+                                background-image: url('./assets/fp-girl2.png');
+                                width: 49%;
+                                height: 100%;
+                                position: absolute;
+                                top: 15%;
+                                left: 40%;
+                                background-position: bottom;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                transition: .2s ease-in;
+                                transform: rotate(25deg);
+
+                                &:hover {
+                                    transform: rotate(0);
+                                }
+                            }
+                        }
+                        button{
+                            background-color: #111;
+                            font-family: sans-serif;
+                            color: white;
+                            width: 8.4rem;
+                            height: 2.5rem;
+                        }
+                    }
+
+
                 }
 
                 .mm-dropdown {
@@ -107,7 +213,8 @@
                     left: 0%;
                     height: 30rem;
                     display: none;
-                    transition: .25s linear;
+                   
+                    transition: .2s ease-in;
 
                     .mm-left {
 
@@ -202,14 +309,14 @@
                                 background-color: lightgrey;
                                 outline: none;
                                 border: none;
-                            
 
-                            &:hover {
-                                background-color: gray !important;
-                                cursor: pointer;
-                                box-shadow: none;
+
+                                &:hover {
+                                    background-color: gray !important;
+                                    cursor: pointer;
+                                    box-shadow: none;
+                                }
                             }
-                        }
 
 
                             .rec-dot_active {
@@ -222,14 +329,14 @@
                                 height: 13px;
                                 // margin: 0;
                                 // margin-top: 5.19%;
-                            
 
-                            &:hover {
-                                background-color: gray !important;
-                                cursor: pointer;
-                                box-shadow: none;
+
+                                &:hover {
+                                    background-color: gray !important;
+                                    cursor: pointer;
+                                    box-shadow: none;
+                                }
                             }
-                        }
 
 
 

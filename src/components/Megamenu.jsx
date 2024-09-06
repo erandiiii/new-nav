@@ -20,7 +20,7 @@ const Megamenu = () => {
                 className={`arrow-button ${type}`}
                 style={{
                     background: "white",
-                    border: "1px solid lightgray",
+                    border: "1px solid black",
                     width: "15px",
                     height: "15px",
                     display: "flex",
