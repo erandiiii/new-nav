@@ -56,12 +56,14 @@
                 height: 100%;
                 position: relative;
                 z-index: 3000 !important;
-                &:hover{
 
-                    .mm-dropdown{
+                &:hover {
+
+                    .mm-dropdown {
                         transform: rotate(90deg);
                     }
-                    .mengamenu-container{
+
+                    .mengamenu-container {
                         display: flex;
 
                     }
@@ -82,10 +84,17 @@
                     // z-index: 4000 !important;
                 }
 
-                .mm-dropdown{
+                .au-mm-container {
+                    display: flex;
+                    position: fixed;
+                    background-color: #fff;
+                    width: 50vw;
+                }
+
+                .mm-dropdown {
                     color: white;
                     transition: .3s ease-out;
-                    
+
                 }
 
                 .mengamenu-container {
@@ -107,7 +116,7 @@
                         justify-content: space-between;
                         width: 65%;
                         transition: .25s linear;
-                        
+
 
 
 
@@ -153,13 +162,17 @@
                     .mm-right {
                         width: 30%;
                         padding: 1% 4%;
-                        // border: 1px solid #111;
+
                         font-family: 'Brown Sugar', sans-serif;
-                        .top-right{
+
+                        .top-right {
                             display: flex;
                             align-items: center;
                             justify-content: start;
-                            a{
+                            padding: 0 3%;
+                            margin-bottom: -.5rem;
+
+                            a {
                                 color: #111;
                                 font-size: 12px;
                                 font-family: sans-serif;
@@ -168,69 +181,60 @@
                         }
 
                         .divi {
-                            .slick-dots {
-                                bottom: -3rem;
-                                width: 95%;
-                                li {
-                                    width: 30px;
-                                    button {
-                                        width: 16px;
-                                        height: 16px;
-                                        border-radius: 50%;
-                                        background-color: gray;
-                                        
-                                        
-                                        
-                                        
-                                    }
+                            width: 100% !important;
 
-                                    &.slick-active button {
-                                        background-color: black;
-                                      
-                                    }
-
-                                    &::before {
-                                        content: '';
-                                        position: absolute;
-                                        display: none;
-                                        top: 0;
-                                        left: 0;
-                                        width: 16px;
-                                        height: 16px;
-                                        border-radius: 50%;
-                                        transition: background-color 0.3s ease;
-                                        
-
-                                    }
-                                }
+                            .arrow-button.NEXT {
+                                position: absolute;
+                                top: 9%;
+                                right: 5%;
+                                transform: rotate(180deg);
                             }
 
-                            .slick-dots li button:before {
-                                color: transparent;
-                            }
-                            .slick-prev{
-                                top:-8%;
-                                left: 87%;
-                                color: white;
-                                background-color: white !important;
-                               
+                            .arrow-button.PREV {
+                                position: absolute;
+                                top: 9%;
+                                right: 6.5%;
+
                             }
 
-                            .slick-prev::before{
-                                font-size:20px;
-                                color: black !important;
-                                background-color: white;
+                            .rec-dot {
+                                margin-top: 1rem;
+                                background-color: lightgrey;
+                                outline: none;
+                                border: none;
+                            
+
+                            &:hover {
+                                background-color: gray !important;
+                                cursor: pointer;
+                                box-shadow: none;
                             }
-                            .slick-next{
-                                top:-8%;
-                                left: 92%;
-                                color: white;
-                                background-color: white !important;
+                        }
+
+
+                            .rec-dot_active {
+                                margin-top: .9245rem;
+                                color: #111;
+                                background-color: #111;
+                                border: none;
+                                box-shadow: none;
+                                width: 13px;
+                                height: 13px;
+                                // margin: 0;
+                                // margin-top: 5.19%;
+                            
+
+                            &:hover {
+                                background-color: gray !important;
+                                cursor: pointer;
+                                box-shadow: none;
                             }
-                            .slick-next::before{
-                                font-size:20px;
-                                color: black !important;
-                                background-color: white;
+                        }
+
+
+
+                            .cardss {
+                                width: 95% !important;
                             }
                         }
                     }
@@ -771,33 +775,65 @@
 
 }
 
-@media(max-width:1450px){
-    .mengamenu-container{
-       
-        
-            .mm-right{
-                width: 35% !important;
-                padding: 0;
+@media(max-width:14400px) {
+    .mengamenu-container {
+
+
+        .mm-right {
+            width: 40% !important;
+            padding: 0;
+        }
+
+        .divi {
+            .cardss {
+                width: 96% !important;
             }
-            .divi{
-                .slick-prev{
-                    left: 87% !important;
-                }
-            }
-        
+        }
+
     }
 }
-@media(max-width:1150px){
-    .mengamenu-container{
-       
-        
-            .mm-right{
-                width: 40% !important;
-                padding: 0;
-            
-           
+
+@media(max-width:1280px) {
+    .mengamenu-container {
+
+
+        .mm-right {
+            width: 50% !important;
+            padding: 0;
         }
-           
-        
+
+        .divi {
+            .cardss {
+                width: 97% !important;
+            }
+
+            .arrow-button.NEXT {
+                right: 5.5% !important;
+            }
+
+            .arrow-button.PREV {
+                right: 7.5% !important;
+            }
+        }
+
+    }
+}
+
+@media(max-width:1150px) {
+    .mengamenu-container {
+
+
+        .mm-right {
+            width: 55% !important;
+            padding: 0;
+        }
+
+        .divi {
+            .cardss {
+                width: 98% !important;
+            }
+        }
+
+
     }
 }

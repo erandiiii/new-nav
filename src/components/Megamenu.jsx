@@ -1,24 +1,42 @@
 import React from 'react'
 import { navData, models } from './Data'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+import Carousel from 'react-elastic-carousel';
 import { Link } from 'react-router-dom';
 
 
 const Megamenu = () => {
 
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />
+    const breakPoints = [
+        { width: 1, itemsToShow: 2 },
+        { width: 550, itemsToShow: 2 },
+        { width: 768, itemsToShow: 2 },
+        { width: 1200, itemsToShow: 2 },
+    ];
 
-
+    const CustomArrow = ({ type, onClick, isEdge }) => {
+        return (
+            <div
+                onClick={onClick}
+                className={`arrow-button ${type}`}
+                style={{
+                    background: "white",
+                    border: "1px solid black",
+                    width: "15px",
+                    height: "15px",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    cursor: isEdge ? "not-allowed" : "pointer",
+                }}
+            >
+                <span style={{ color: "black", fontSize: "10px" }}>
+                    {type === 'next' ? '>' : '<'}
+                    
+                </span>
+            </div>
+        );
     };
+
     return (
         <div className='mengamenu-container'>
             <div className="mm-left">
@@ -40,9 +58,15 @@ const Megamenu = () => {
             <div className="mm-right">
                 <div className='top-right'>
                     <h3> Models </h3>
-                    <Link>View all&gt;</Link>
+                    <Link>View all &gt;</Link>
                 </div>
-                <Slider className='divi' {...settings}>
+                <Carousel className='divi'
+                pagination={true} 
+                    breakPoints={breakPoints}
+                    renderArrow={({ type, onClick, isEdge }) => (
+                        <CustomArrow type={type} onClick={onClick} isEdge={isEdge} />
+                    )}
+                >
                     {models.map((model) => (
                         <div key={model.id} className="cardss">
                             <div className="card-image">
@@ -59,33 +83,12 @@ const Megamenu = () => {
                             </div>
                         </div>
                     ))}
-                </Slider>
+                </Carousel>
 
             </div>
         </div>
     )
-    
+
 };
-const SampleNextArrow = (props) => {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "black" }}
-        onClick={onClick}
-      />
-    );
-  };
-  
-  const SamplePrevArrow = (props) => {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "black",  }}
-        onClick={onClick}
-      />
-    );
-  };
 
 export default Megamenu

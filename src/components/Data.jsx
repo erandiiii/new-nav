@@ -68,7 +68,7 @@ export const models=[
         image: photo2, 
       },
       {
-        id: 1,
+        id: 3,
         name: 'Klea Gashi',
         role: 'Model',
         category: ['Model ', 'Photography ', 'Artist'],
@@ -76,12 +76,64 @@ export const models=[
         image: photo1, 
       },
       {
-        id: 2,
+        id: 4,
         name: 'Arta Kalludra',
         role: 'Model',
         category: ['Model ', 'Photography ', 'Artist'],
         date: '19 May 2022',
         image: photo2, 
       },
+      {
+        id: 5,
+        name: 'Klea Gashi',
+        role: 'Model',
+        category: ['Model ', 'Photography ', 'Artist'],
+        date: '19 May 2022',
+        image: photo1, 
+      },
+      {
+        id: 6,
+        name: 'Arta Kalludra',
+        role: 'Model',
+        category: ['Model ', 'Photography ', 'Artist'],
+        date: '19 May 2022',
+        image: photo2, 
+      },
+      {
+        id: 7,
+        name: 'Klea Gashi',
+        role: 'Model',
+        category: ['Model ', 'Photography ', 'Artist'],
+        date: '19 May 2022',
+        image: photo1, 
+      },
       
+      
+]
+
+export const aboutUs = [
+    {
+        category:'AGENCY',
+        links:[
+           { name:'Abous us'},
+           { name:'Our Models'},
+           { name:'Our Partners'},
+           { name:'Our Team'},
+           { name:'Our Partners'},
+           { name:'Clients'}
+        ]
+
+    },
+    {
+        category:'MODELS',
+        links:[
+           { name:'Be a model'},
+           { name:'Careers'},
+           { name:'Magazine'},
+           { name:'Lists'},
+           { name:'New Faces'},
+           { name:'Rankings'}
+        ]
+
+    }
 ]
