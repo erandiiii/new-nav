@@ -12,17 +12,41 @@
         gap: max(.25rem,1.5vh);
         justify-content: flex-start;
         padding: 10rem 0;
-        width: 40%;
+        position: relative;
+        width: 30%;
+        margin-left: 4.5rem;
+        margin-top: -1.5rem;
 
         h1{
             font-family: 'Brown Sugar', sans-serif;
             line-height: 1.4;
             font-weight: 500;
-            font-size: max(25px,4vw);
+            font-size: max(30px,5vw);
+            margin-bottom: -.4rem;
+            color:#111;
         }
         p{
             font-size: max(14px,1vw);
             line-height: max(30px,2.5vw);
+            color: #111;
+            opacity: 80%;
+        }
+
+        .svg-ja{
+            transition: .2s ease-in;
+            position: absolute;
+            top: 70%;
+            left: 68%;
+            &:hover{
+                transform: rotate(60deg);
+            }
+        }
+
+        .arrow-icon{
+            position: absolute;
+            bottom:10%;
+            left: 85%;
+         
         }
     }
 
@@ -32,6 +56,8 @@
         justify-content: center;
         position: relative;
         width: 60%;
+        margin-top: -30rem;
+
 
         .img-holder{
             align-items: stretch;
@@ -39,25 +65,27 @@
             gap: max(.5rem,1vw);
             padding: max(2rem,3vw);
             position: relative;
-            width: 100%;
+            width: 80%;
 
             .au-card1{
                 background-color: white;
-                border: 1px solid #000;
+                border: 1px solid lightgray;
                 display: flex;
                 flex-direction: column;
                 gap: max(1rem,1vw);
                 padding: max(.5rem,1vw);
-                position: relative;
+                position: absolute;
                 transition: .2s ease-out;
-                width: max(10rem,25vw);
-                left: 10%;
-                top: -5%;
+                width: max(10rem,22vw);
+                left: 1%;
+                top: 35%;
                 z-index: 3; 
 
                 &:hover{
                     z-index: 10;
                     transform: scale(1.1);
+                    background-color: #111;
+                    color: white;
                 }
                 .card1-img{
                     background-position: 50% 50%;
@@ -73,41 +101,52 @@
                     flex-direction: column;
                     gap: max(.5rem,1vw);
                     width: 100%;
+                    
 
                     h3{
                         font-family: 'Brown Sugar', sans-serif;
-                        line-height: 1.4;
+                        line-height: 0;
                         font-weight: 500;
-                        font-size: max(16px,1vw);
+                        font-size: max(20px,1.5vw);
+                        margin-bottom: .8rem;
                     }
                     .content-row{
                         align-items: center;
                         display: flex;
                         flex-wrap: wrap;
-                        gap: max(10px,.25vw);
+                        // gap: max(10px,.25vw);
                         justify-content: space-evenly;
+                        margin-bottom: -1rem;
                         width: 100%;
+                        p{
+                            font-size: 18px;
+                        }
+                    }
+                    .data{
+                        margin-bottom: 3rem;
                     }
                 }
             }
 
             .au-card2{
-                border: 1px solid #000;
+                border: 1px solid lightgray;
                 display: flex;
                 flex-direction: column;
                 gap: max(1rem,1vw);
                 padding: max(.5rem,1vw);
-                position: relative;
+                position: absolute;
                 transition: .2s ease-out;
-                width: max(10rem,25vw);
+                width: max(10rem,22vw);
                 background-color: white;
-                left: -10%;
-                top: 5%;
+                left: 34%;
+                top: 80%;
                 z-index: 2;
 
                 &:hover{
                     z-index: 10;
                     transform: scale(1.1);
+                    background-color: #111;
+                    color: white;
                 }
 
                 .card2-img{
@@ -126,18 +165,29 @@
 
                     h3{
                         font-family: 'Brown Sugar', sans-serif;
-                        line-height: 1.4;
+                        line-height: 0;
                         font-weight: 500;
-                        font-size: max(16px,1vw);
+                        font-size: max(20px,1.5vw);
+                        margin-bottom: .8rem;
                     }
                     .content2-row{
                         align-items: center;
                         display: flex;
                         flex-wrap: wrap;
-                        gap: max(10px,.25vw);
+                        // gap: max(10px,.25vw);
+                    
                         justify-content: space-evenly;
+                        margin-bottom: -1rem;
                         width: 100%;
+                        p{
+                            font-size: 18px;
+                        }
+
                     }
+                        .data1{
+                            margin-bottom: 3rem;
+                        }
+                   
                 }
             }
         }

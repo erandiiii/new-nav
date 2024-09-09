@@ -1,13 +1,15 @@
 import React from 'react'
 import FirstPage from './firstpage/FirstPage'
-// import AboustUs from './aboutus/AboustUs'
+import AboustUs from './aboutus/AboustUs'
+import History from './History'
 // import AboutUsMega from './AboutUsMega'
 
 const Home = () => {
   return (
     <>
     <FirstPage/>
-    {/* <AboustUs/> */}
+    <AboustUs/>
+    <History/>
     {/* <AboutUsMega/> */}
     </>
   )
