@@ -5,11 +5,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    flex-wrap: wrap !important; 
     justify-content: space-between;
     padding: 15% 5%;
     position: relative;
     flex-direction: row;
-    flex-wrap: wrap;
+   
     gap: max(2rem, 2vw);
 
     .bg {

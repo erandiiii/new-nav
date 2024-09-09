@@ -1,7 +1,7 @@
 import React from 'react'
 import FirstPage from './firstpage/FirstPage'
 import AboustUs from './aboutus/AboustUs'
-import History from './History'
+// import History from './History'
 // import AboutUsMega from './AboutUsMega'
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
     <>
     <FirstPage/>
     <AboustUs/>
-    <History/>
+    {/* <History/> */}
     {/* <AboutUsMega/> */}
     </>
   )

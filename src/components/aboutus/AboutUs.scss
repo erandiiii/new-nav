@@ -1,9 +1,10 @@
 .au-container{
     align-items: stretch;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 5%;
-    width: 100%;
+    // width: 100%;
     
     .au-text{
         align-items: flex-start;
@@ -13,8 +14,8 @@
         justify-content: flex-start;
         padding: 10rem 0;
         position: relative;
-        width: 30%;
-        margin-left: 4.5rem;
+        width: 35%;
+        margin-left: 4rem;
         margin-top: -1.5rem;
 
         h1{
@@ -36,7 +37,7 @@
             transition: .2s ease-in;
             position: absolute;
             top: 70%;
-            left: 68%;
+            left: 65%;
             &:hover{
                 transform: rotate(60deg);
             }
@@ -45,7 +46,7 @@
         .arrow-icon{
             position: absolute;
             bottom:10%;
-            left: 85%;
+            left: 81%;
          
         }
     }
@@ -55,7 +56,7 @@
         display: flex;
         justify-content: center;
         position: relative;
-        width: 60%;
+        width: 55%;
         margin-top: -30rem;
 
 
@@ -77,8 +78,8 @@
                 position: absolute;
                 transition: .2s ease-out;
                 width: max(10rem,22vw);
-                left: 1%;
-                top: 35%;
+                left: 5%;
+                top: 36%;
                 z-index: 3; 
 
                 &:hover{
@@ -123,7 +124,7 @@
                         }
                     }
                     .data{
-                        margin-bottom: 3rem;
+                        margin-bottom: 2rem;
                     }
                 }
             }
@@ -138,8 +139,8 @@
                 transition: .2s ease-out;
                 width: max(10rem,22vw);
                 background-color: white;
-                left: 34%;
-                top: 80%;
+                left: 40%;
+                top: 83%;
                 z-index: 2;
 
                 &:hover{
@@ -185,9 +186,136 @@
 
                     }
                         .data1{
-                            margin-bottom: 3rem;
+                            margin-bottom: 2rem;
                         }
                    
+                }
+            }
+        }
+    }
+}
+@media(max-width:1600px){
+    .au-container{
+        .au-text {
+            .arrow-icon{
+                left: 85%;
+                bottom: 8%;
+            }
+        }
+    } 
+}
+@media(max-width:1200px){
+    .au-container{
+        .au-text {
+            .arrow-icon{
+                left: 91%;
+                bottom: 6%;
+            }
+        }
+    } 
+}
+@media(max-width:1000px){
+    .au-container{
+        .au-text {
+            .arrow-icon{
+                left: 96%;
+                bottom: 5%;
+            }
+        }
+    } 
+}
+@media(max-width:955px){
+    .au-container{
+        .au-text{
+            width: 100%;
+            align-items: center;
+            margin-top: -10REM;
+            h1 {
+                font-size: 3rem;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+            .svg-ja{
+                display: none;
+            }
+                .arrow-icon{
+                    display: none;
+                }
+            
+        }
+        .au-right{
+            // width: 100%;
+            justify-content: center;
+            margin-top: -10rem;
+            
+
+            .img-holder{
+                display: flex;
+                // justify-content: space-around;
+                align-items: center;
+
+                .au-card1{
+                    width: 65%;
+                }
+                .au-card2{
+                    width: 65%;
+                }
+            }
+        }
+    }
+}
+@media(max-width:700px){
+    .au-container{
+        .au-right{
+            width: 100%;
+            .img-holder{
+                width: 100%;
+                justify-content: center;
+                
+                align-items: center !important;
+                .au-card1{
+                    position: unset;
+                    width: 80%;
+                }
+                .au-card2{
+                    position: unset;
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+@media(max-width:550px){
+    .au-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .au-text{
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            display: flex;
+            margin-right: 1rem;
+           
+        }
+        .au-right{
+            width: 100%;
+            padding:0;
+            .img-holder{
+                margin-left: 1rem;
+                width: 100%;
+                justify-content: center !important;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center !important;
+                .au-card1{
+                    position: unset;
+                    width: 90%;
+                }
+                .au-card2{
+                    position: unset;
+                    width: 90%;
                 }
             }
         }
