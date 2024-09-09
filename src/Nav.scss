@@ -361,6 +361,7 @@
                         width: 90% !important;
                         padding: 1% 0;
                         height: 19.5rem;
+                        
 
                         &:hover {
                             background-color: #111;
@@ -373,13 +374,14 @@
 
                     .card-image {
                         display: flex;
-
                         justify-content: center;
+                      
                     }
 
                     img {
                         height: 12.5rem;
                         width: 95%;
+                        
                     }
 
                     .card-details {
